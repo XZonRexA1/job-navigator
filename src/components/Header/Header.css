@@ -1,0 +1,44 @@
+.nav-container {
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 44px;
+  color: #1a1919;
+}
+
+.nav-link {
+  display: flex;
+  gap: 20px;
+  font-family: "Manrope";
+}
+.nav-link a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.nav-link a:hover {
+  color: #434040;
+}
+
+.btn-apply {
+  width: 150px;
+  height: 55px;
+  border: 0;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 27px;
+  cursor: pointer;
+  color: #ffffff;
+}
