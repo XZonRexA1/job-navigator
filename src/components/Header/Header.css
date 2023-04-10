@@ -1,3 +1,5 @@
+/* nav section */
+
 .nav-container {
   display: flex;
   gap: 300px;
@@ -41,4 +43,46 @@
   line-height: 27px;
   cursor: pointer;
   color: #ffffff;
+}
+/* hero section */
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-left: 50px;
+  margin-top: 80px;
+  font-size: 50px;
+  line-height: 67px;
+  font-family: "Manrope";
+}
+.span-text {
+  color: #9873ff;
+}
+
+p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 50px;
+  color: #757575;
+  margin-top: -20px;
+}
+
+.btn-getStarted {
+  margin-left: 50px;
+  margin-top: 22px;
+}
+
+.image-container img {
+  width: 600px;
+  height: 400px;
+  margin-right: 40px;
 }
