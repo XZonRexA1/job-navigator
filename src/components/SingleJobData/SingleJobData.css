@@ -1,0 +1,53 @@
+.job-data {
+  width: 70%;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.05) 0%,
+    rgba(152, 115, 255, 0.05) 100%
+  );
+  border-radius: 8px;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+
+.job-data img {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+  border-radius: 8px;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  color: #474747;
+}
+
+h5 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #a3a3a3;
+  margin-top: -15px;
+}
+
+/* single job data responsive */
+
+@media(max-width: 767px) {
+    .job-data {
+        text-align: center;
+        width: 100%;
+    }
+}

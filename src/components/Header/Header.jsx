@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import jobImage from '../../assets/All Images/person.png'
 
 const Header = () => {
   return (
@@ -31,7 +32,7 @@ const Header = () => {
         </div>
         <div className="image-container">
           <img
-            src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            src={jobImage}
             alt="job"
           />
         </div>

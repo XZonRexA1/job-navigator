@@ -1,0 +1,16 @@
+.job-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 60px;
+}
+
+/* job container responsive */
+@media (max-width: 767px) {
+  .job-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+  }
+}
