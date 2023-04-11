@@ -2,7 +2,6 @@ import React from "react";
 import "./SingleJobData.css";
 const SingleJobData = ({ singleJobData }) => {
   const { category_logo, category_name, jobsAvailable } = singleJobData;
-  console.log(singleJobData.jobsAvailable);
   return (
     <div>
       <div className="job-data">

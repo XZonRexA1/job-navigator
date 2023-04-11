@@ -1,0 +1,52 @@
+.job-data-container {
+  margin-top: 40px;
+  border: 1px solid gray;
+  padding: 50px 40px 80px 20px;
+  width: 90%;
+  height: 300px;
+  border-radius: 9px;
+  position: relative;
+}
+
+.job-data-container img {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.job-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #474747;
+}
+.company-name {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #757575;
+  margin-top: 5px;
+}
+
+.remote-or-onsite,
+.fulltime-or-part-time {
+  margin-top: 5px;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 2px solid #7e90fe;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+.job-data-container .btn-details {
+  margin-left: 50px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+}
