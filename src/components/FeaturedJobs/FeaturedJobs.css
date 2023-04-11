@@ -3,3 +3,18 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
+.btn-show-all {
+  width: 150px;
+  height: 55px;
+  border: 0;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 27px;
+  cursor: pointer;
+  color: #ffffff;
+}

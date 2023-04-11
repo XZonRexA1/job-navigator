@@ -20,6 +20,11 @@ const FeaturedJobs = () => {
           <FeaturedJob key={jobData.id} jobData={jobData}></FeaturedJob>
         ))}
       </div>
+      <div style={{display: "grid", justifyContent: "center", marginTop: '40px'}}>
+        <button style={{ textAlign: "center" }} className="btn-show-all">
+          See all Jobs
+        </button>
+      </div>
     </div>
   );
 };
