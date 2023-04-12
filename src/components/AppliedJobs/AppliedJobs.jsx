@@ -6,7 +6,22 @@ import { useLoaderData } from "react-router-dom";
 import AppliedJob from "../AppliedJob/AppliedJob";
 const AppliedJobs = () => {
   const savedJobs = useLoaderData();
-  //   savedJobs.map((jb) => console.log(jb.company_logo));
+  console.log(savedJobs);
+
+  const [filteredJobs, setFilteredJobs] = useState(null);
+  const handleShowOnsite = () => {
+    const onsiteJobs = savedJobs.filter(
+      (job) => job.remote_or_onsite === "Onsite"
+    );
+    setFilteredJobs(onsiteJobs);
+  };
+  const handleShowRemote = () => {
+    const onsiteJobs = savedJobs.filter(
+      (job) => job.remote_or_onsite === "Remote"
+    );
+    setFilteredJobs(onsiteJobs);
+  };
+
   return (
     <div>
       <div className="applied-job-banner">
@@ -15,8 +30,16 @@ const AppliedJobs = () => {
           <img src={vectorImage2} alt="vector photo" />
         </div>
         <h2 className="applied-job-text">Applied Jobs</h2>
+        <div className="filter-btn">
+          <button className="btn-apply" onClick={() => handleShowOnsite()}>
+            Show Onsite jobs
+          </button>
+          <button className="btn-apply" onClick={() => handleShowRemote()}>
+            Show Remote jobs
+          </button>
+        </div>
         <div className="applied-jobs-container">
-          {savedJobs.map((jb) => (
+          {(filteredJobs || savedJobs).map((jb) => (
             <AppliedJob key={jb.id} jb={jb}></AppliedJob>
           ))}
         </div>
