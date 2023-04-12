@@ -1,5 +1,5 @@
 .job-data-container {
-  margin-top: 40px;
+  margin-top: 10px;
   border: 1px solid gray;
   padding: 50px 40px 80px 20px;
   width: 90%;
@@ -28,13 +28,11 @@
   font-size: 20px;
   line-height: 27px;
   color: #757575;
-  margin-top: 5px;
 }
 
 .remote-or-onsite,
 .fulltime-or-part-time {
   margin-top: 5px;
-  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
   background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,9 +42,24 @@
   border-radius: 4px;
 }
 
+.job-data-container .icon {
+  margin-right: 10px;
+}
+
 .job-data-container .btn-details {
   margin-left: 50px;
   position: absolute;
   bottom: 0;
   margin-bottom: 30px;
+}
+
+
+/* job data container responsive */
+
+@media (max-width: 767px) {
+  .job-data-container {
+    margin-left: 25px;
+    height: 320px;
+  }
+
 }

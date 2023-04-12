@@ -18,3 +18,13 @@
   cursor: pointer;
   color: #ffffff;
 }
+
+
+/* jobs container responsive */
+
+@media (max-width: 767px) {
+  .jobs-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

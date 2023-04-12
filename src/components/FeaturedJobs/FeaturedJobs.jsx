@@ -11,7 +11,7 @@ const FeaturedJobs = () => {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Featured Jobs</h1>
-      <p style={{ textAlign: "center" }}>
+      <p style={{ textAlign: "center", marginBottom: '30px' }}>
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
