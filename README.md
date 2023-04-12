@@ -27,4 +27,4 @@ then it will go to another page show extra information about the Featured job se
 # My Project Website Host link
 [Link](https://job-navigator-me.netlify.app/)
 
-## So this was My projects Best Features and if Miss anything feel Free to Forgive me, Until Next time See you again !!!
+## So this was My projects Best Features and if I Miss anything feel Free to Forgive me, Until Next time See you again !!!
