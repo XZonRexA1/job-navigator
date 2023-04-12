@@ -1,4 +1,4 @@
-.job-details-container {
+.job-details-banner {
   position: relative;
   width: 100%;
 }
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -37,4 +38,101 @@
   line-height: 44px;
   color: #1a1919;
   margin: 0 auto;
+}
+
+/* job details container  */
+.job-details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-top: 130px;
+}
+
+.job-details-container p span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 32px;
+  color: #1a1919;
+}
+
+.job-details-container p {
+  text-align: left;
+  margin-top: 24px;
+}
+
+/* job details card container */
+.job-details-card {
+  width: 424px;
+  height: 461px;
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+  border-radius: 8px;
+  margin-left: 34px;
+  text-align: left;
+  margin-bottom: 130px;
+  position: relative;
+}
+
+.job-details-card h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1a1919;
+  margin-left: 30px;
+}
+
+.job-details-card hr {
+  border: 1px solid #9873ff;
+  width: 364px;
+}
+.job-info-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #474747;
+  margin-left: 30px;
+}
+
+.job-info-text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #757575;
+}
+
+.job-btn-apply {
+  position: absolute;
+  width: 424px;
+  bottom: -15%;
+}
+
+/* job details container responsive */
+@media (max-width: 767px) {
+  .job-details-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .job-details-container p {
+    margin-left: 10px;
+  }
+  .job-details-card {
+    margin-left: 10px;
+    width: 90%;
+    padding-right: 20px;
+  }
+  .job-btn-apply {
+    width: 100%;
+    margin-right: 40px;
+  }
 }
