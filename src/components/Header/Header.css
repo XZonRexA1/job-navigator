@@ -51,8 +51,5 @@
     flex-direction: column;
     gap: 20px;
   }
-  .nav-link {
-    display: flex;
-    flex-direction: column;
-  }
+
 }

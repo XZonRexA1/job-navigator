@@ -1,0 +1,40 @@
+.job-details-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-container {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.05) 0%,
+    rgba(152, 115, 255, 0.05) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* img container responsive */
+@media (max-width: 767px) {
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+.job-details-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 44px;
+  color: #1a1919;
+  margin: 0 auto;
+}
