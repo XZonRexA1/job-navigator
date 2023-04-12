@@ -1,0 +1,41 @@
+.applied-job-container {
+  margin-top: 50px;
+  margin-left: 70px;
+  border: 1px solid gray;
+  padding: 30px;
+  margin-right: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.applied-job-container img {
+  padding: 60px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: gainsboro;
+}
+
+.btn-view-details {
+  position: absolute;
+  right: 30px;
+}
+
+/* applied job container responsive */
+@media (max-width: 767px) {
+  .applied-job-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 85%;
+    padding-bottom: 60px;
+    margin: 20px auto;
+    text-align: left;
+    /* margin-left: 10px; */
+  }
+  .btn-view-details {
+    bottom: 0;
+    margin: 10px 32%;
+  }
+}

@@ -12,6 +12,21 @@ const addToDb = (id) => {
   localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
 };
 
+// different
+const addToCart = (jobDataInfo) => {
+  const existingData = JSON.parse(localStorage.getItem("jobData")) || [];
+
+  const existingItem = existingData.find((item) => item.id === jobDataInfo.id);
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    jobDataInfo.quantity = 1;
+    existingData.push(jobDataInfo);
+  }
+
+  localStorage.setItem("jobData", JSON.stringify(existingData));
+};
+
 const removeFromDb = (id) => {
   const shoppingCart = getShoppingCart();
   if (id in shoppingCart) {
@@ -35,4 +50,4 @@ const deleteShoppingCart = () => {
   localStorage.removeItem("shopping-cart");
 };
 
-export { addToDb, removeFromDb, getShoppingCart, deleteShoppingCart };
+export { addToDb, removeFromDb, getShoppingCart, deleteShoppingCart, addToCart };

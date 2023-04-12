@@ -11,7 +11,7 @@ import {
   faPhone,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import { addToDb } from "../../utilities/fakedb";
+import { addToCart, addToDb } from "../../utilities/fakedb";
 const JobDetails = () => {
   const { jobDetailsId } = useParams();
 
@@ -34,19 +34,9 @@ const JobDetails = () => {
     email,
     address,
   } = jobData;
+
   const handleAddToDb = (jobDataInfo) => {
-    let newJobData = [];
-    const exists = data.find((jobInfo) => jobInfo.id === jobDataInfo.id);
-    if (!exists) {
-      jobData.quantity = 1;
-      newJobData = [...data, jobDataInfo];
-    } else {
-      exists.quantity = exists.quantity + 1;
-      const remaining = data.filter((db) => db.id === jobData.id);
-      newJobData = [...remaining, exists];
-    }
-    const newJobDataJSON = JSON.stringify(newJobData);
-    addToDb(newJobDataJSON);
+    addToCart(jobDataInfo);
   };
   return (
     <div>
