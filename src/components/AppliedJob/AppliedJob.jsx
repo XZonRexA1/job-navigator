@@ -1,7 +1,8 @@
 import React from "react";
 import "./AppliedJob.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";    
+import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const AppliedJob = ({ jb }) => {
   const {
     id,
@@ -17,7 +18,7 @@ const AppliedJob = ({ jb }) => {
     <div>
       <div className="applied-job-container">
         <img src={company_logo} alt="company logo" />
-        <div style={{marginTop: "30px"}}>
+        <div style={{ marginTop: "30px" }}>
           <p className="job-title">{job_title}</p>
           <p className="company-name">{company_name}</p>
           <div style={{ display: "flex" }}>
@@ -28,18 +29,21 @@ const AppliedJob = ({ jb }) => {
             <p>
               <span className="icon">
                 <FontAwesomeIcon icon={faLocationDot} />
-              </span> <span></span>
+              </span>{" "}
+              <span></span>
               {location}
             </p>
             <p>
               <span className="icon">
                 <FontAwesomeIcon icon={faDollarSign} />
-              </span> <span></span>
-              {salary}
+              </span>{" "}
+              Salary: {salary}
             </p>
           </div>
         </div>
-        <button className="btn-view-details btn-apply">View Details</button>
+        <Link to={`/jobDetails/${id}`}>
+          <button className="btn-view-details btn-apply">View Details</button>
+        </Link>
       </div>
     </div>
   );

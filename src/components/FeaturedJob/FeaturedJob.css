@@ -53,13 +53,11 @@
   margin-bottom: 30px;
 }
 
-
 /* job data container responsive */
 
 @media (max-width: 767px) {
   .job-data-container {
-    margin-left: 25px;
-    height: 320px;
+    margin-right: 30px;
+    height: 380px;
   }
-
 }
