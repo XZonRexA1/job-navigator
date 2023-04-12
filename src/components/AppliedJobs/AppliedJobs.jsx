@@ -4,9 +4,10 @@ import vectorImage2 from "../../assets/All Images/Vector-1.png";
 import "./AppliedJobs.css";
 import { useLoaderData } from "react-router-dom";
 import AppliedJob from "../AppliedJob/AppliedJob";
+import ErrorPage from "../ErrorPage/ErrorPage";
 const AppliedJobs = () => {
   const savedJobs = useLoaderData();
-  console.log(savedJobs);
+
 
   const [filteredJobs, setFilteredJobs] = useState(null);
   const handleShowOnsite = () => {
@@ -39,9 +40,13 @@ const AppliedJobs = () => {
           </button>
         </div>
         <div className="applied-jobs-container">
-          {(filteredJobs || savedJobs).map((jb) => (
-            <AppliedJob key={jb.id} jb={jb}></AppliedJob>
-          ))}
+          {filteredJobs || savedJobs ? (
+            (filteredJobs || savedJobs).map((jb) => (
+              <AppliedJob key={jb.id} jb={jb}></AppliedJob>
+            ))
+          ) : (
+            <ErrorPage></ErrorPage>
+          )}
         </div>
       </div>
     </div>

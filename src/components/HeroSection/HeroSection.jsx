@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import jobImage from "../../assets/All Images/person.png";
+import jobImage from "../../../public/Images/All Images/person.png";
 const HeroSection = () => {
   return (
     <div>
