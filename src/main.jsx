@@ -9,6 +9,7 @@ import Header from "./components/Header/Header";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import appliedJobsLoader from "./loaders/appliedJobsData";
 import Statistics from "./components/Statistics/Statistics";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <ErrorPage></ErrorPage>,
   },
 ]);
 

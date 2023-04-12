@@ -1,0 +1,9 @@
+.error-container {
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  margin-left: 50px;
+  font-weight: bold;
+  font-family: 'Manrope';
+}
